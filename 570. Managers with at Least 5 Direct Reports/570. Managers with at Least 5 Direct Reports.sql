@@ -6,4 +6,4 @@ WITH cte as(SELECT managerId, COUNT(managerId) AS direct_reports
 
 SELECT e.name FROM Employee e
 LEFT JOIN cte ON e.id = cte.managerId
-WHERE direct_reports >=5;
+WHERE direct_reports >=5;~

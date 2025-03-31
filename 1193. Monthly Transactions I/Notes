@@ -1,0 +1,3 @@
+while applying left join the enties with value null doen't match up and creates error
+(t.country = a.country OR (t.country IS NULL AND a.country IS NULL)) here
+The condition (t.country IS NULL AND a.country IS NULL) ensures that rows with NULL in the country column are correctly matched.
